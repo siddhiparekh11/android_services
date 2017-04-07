@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#1E4F5D">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/large_sjsu_tile"
+            />
+        <TextView
+            android:id="@+id/activity_a_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#AECFD4"
+            android:textSize="25sp"
+            android:text="PDF Download Activity"/>
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Please provide list of five SJSU's PDFs to download * hardcore of files is file! or you could provide full qualified names..."
+        android:textColor="#AECFD4"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="PDF1 File Location: "
+            android:textAlignment="textEnd"
+            android:textSize="15sp"
+            android:textColor="#AECFD4"/>
+        <EditText
+            android:id="@+id/edit_pdf1"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="PDF2 File Location: "
+
+            android:textSize="15sp"
+            android:textColor="#AECFD4"/>
+        <EditText
+            android:id="@+id/edit_pdf2"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="PDF3 File Location: "
+
+            android:textSize="15sp"
+            android:textColor="#AECFD4"/>
+        <EditText
+            android:id="@+id/edit_pdf3"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="PDF4 File Location: "
+
+            android:textSize="15sp"
+            android:textColor="#AECFD4"/>
+        <EditText
+            android:id="@+id/edit_pdf4"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+
+            />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal">
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="#FFFEC6"
+        android:onClick="onStartDownload"/>
+    <Button
+        android:id="@+id/bind_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bind Service"
+        android:textSize="15sp"
+
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="#FFFEC6"
+        android:onClick="onBindDownload"/>
+</LinearLayout>
+
+</LinearLayout>
